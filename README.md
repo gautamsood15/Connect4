@@ -1,8 +1,8 @@
 # Connect4AI
 
-It is a digital version of the board game called Connect4 developed with Aritifical intelligence.<br/>
+It is a digital version of the board game called Connect4 developed with Aritifical intelligence. <br/>
 Algorithms used in the game are "minmax" and "alpha beta pruning". 								  <br/>
-The game is developed using python programming language with the pygame module.<br/>
+The game is developed using python programming language with the pygame module.					  <br/>
 
 
 
