@@ -9,13 +9,13 @@ The game is developed using python programming language with the pygame module. 
 ## Scoring Mechanism for AI
 
 ### Player Scoring
---> center column +4
---> Lines of Two +2 (for each direction, left, right and diagonal)
---> Lines of Three +5 (for both direction, left and right)
---> (Connect 4) Win!  +1000 (VERY LARGE SCORE) 
+--> center column +4 <br/>
+--> Lines of Two +2 (for each direction, left, right and diagonal) <br/>
+--> Lines of Three +5 (for both direction, left and right) <br/>
+--> (Connect 4) Win!  +1000 (VERY LARGE SCORE) <br/>
 
 ### Opponent Scroing
---> Lines of Two -2 (for each direction, left, right and diagonal)
---> Lines of Three -100 (for both direction, left and right)
+--> Lines of Two -2 (for each direction, left, right and diagonal) <br/>
+--> Lines of Three -100 (for both direction, left and right) <br/>
 
 
