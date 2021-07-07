@@ -1,5 +1,4 @@
 # Connect4AI
-------------------------------------------------------------------------------------------------------------------------
 
 It is a digital version of the board game called Connect4 developed with Aritifical intelligence.
 Algorithms used in the game are "minmax" and "alpha beta pruning". 
