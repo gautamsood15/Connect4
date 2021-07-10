@@ -56,6 +56,7 @@ turn = 0
 
 pygame.init()
 
+SQUARESIZE = 100
 
 
 while not game_over:
