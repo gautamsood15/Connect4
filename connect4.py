@@ -54,6 +54,10 @@ game_over = False
 turn = 0
 
 
+pygame.init()
+
+
+
 while not game_over:
 
 	# Ask for Player 1 Input
