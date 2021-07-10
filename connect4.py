@@ -57,6 +57,7 @@ turn = 0
 pygame.init()
 
 SQUARESIZE = 100
+width = COLUMN_COUNT * SQUARESIZE
 
 
 while not game_over:
