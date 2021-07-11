@@ -60,6 +60,9 @@ SQUARESIZE = 100
 width = COLUMN_COUNT * SQUARESIZE
 height = (COLUMN_COUNT+1) * SQUARESIZE
 
+size = (width, height)
+
+
 while not game_over:
 
 	# Ask for Player 1 Input
