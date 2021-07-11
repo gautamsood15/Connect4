@@ -1,5 +1,6 @@
 import numpy as np
 import pygame
+import sys
 
 ROW_COUNT = 6
 COLUMN_COUNT = 7
