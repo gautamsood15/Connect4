@@ -49,7 +49,7 @@ def winning_move(board, piece):
 				return True
 
 
-def draw_board():
+def draw_board(board):
 	pass
 
 board = create_board()
