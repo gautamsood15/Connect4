@@ -49,6 +49,9 @@ def winning_move(board, piece):
 				return True
 
 
+def draw_board():
+	pass
+
 board = create_board()
 game_over = False
 turn = 0
@@ -61,6 +64,7 @@ width = COLUMN_COUNT * SQUARESIZE
 height = (COLUMN_COUNT+1) * SQUARESIZE
 
 size = (width, height)
+screen = pygame.display.set_mode(size)
 
 
 while not game_over:
