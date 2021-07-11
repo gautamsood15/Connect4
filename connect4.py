@@ -69,6 +69,9 @@ screen = pygame.display.set_mode(size)
 
 while not game_over:
 
+	for event in pygame.event.get():
+		
+
 	# Ask for Player 1 Input
 
 	if turn == 0:
