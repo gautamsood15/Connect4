@@ -58,7 +58,7 @@ pygame.init()
 
 SQUARESIZE = 100
 width = COLUMN_COUNT * SQUARESIZE
-height = COLUMN_COUNT * SQUARESIZE
+height = (COLUMN_COUNT+1) * SQUARESIZE
 
 while not game_over:
 
