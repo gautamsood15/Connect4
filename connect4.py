@@ -2,6 +2,8 @@ import numpy as np
 import pygame
 import sys
 
+BLUE = (0,0,255)
+
 ROW_COUNT = 6
 COLUMN_COUNT = 7
 
@@ -53,7 +55,7 @@ def winning_move(board, piece):
 def draw_board(board):
 	for c in range(COLUMN_COUNT):
 		for r in range(ROW_COUNT):
-			pygame.draw.rect(screen)
+			pygame.draw.rect(screen, BLUE, (c*SQUARESIZE, r*SQUARESIZE, SQUARESIZE, SQUARESIZE))
 
 board = create_board()
 game_over = False
