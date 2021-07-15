@@ -51,7 +51,9 @@ def winning_move(board, piece):
 
 
 def draw_board(board):
-	pass
+	for c in range(COLUMN_COUNT):
+		for r in range(ROW_COUNT):
+			pygame.draw.rect(screen)
 
 board = create_board()
 game_over = False
