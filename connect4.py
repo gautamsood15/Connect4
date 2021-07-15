@@ -71,6 +71,8 @@ height = (COLUMN_COUNT+1) * SQUARESIZE
 size = (width, height)
 screen = pygame.display.set_mode(size)
 
+draw_board(board)
+pygame.display.update()
 
 while not game_over:
 
