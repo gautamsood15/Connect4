@@ -115,6 +115,6 @@ while not game_over:
 #						game_over = True
 #
 			print_board(board)
-#
-#			turn += 1
-#			turn = turn % 2
+
+			turn += 1
+			turn = turn % 2
