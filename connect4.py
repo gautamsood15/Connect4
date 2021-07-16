@@ -91,7 +91,7 @@ while not game_over:
 
 			if turn == 0:
 				posx = event.pos[0]
-				col =
+				col = int(math.floor(posx/SQUARESIZE))
 
 				if is_valid_location(board, col):
 					row = get_next_open_row(board, col)
