@@ -86,21 +86,22 @@ while not game_over:
 
 		if event.type == pygame.MOUSEBUTTONDOWN:
 
-#			# Ask for Player 1 Input
-#
-#			if turn == 0:
-#				col = int(input("Player 1 Make your selection (0-6):"))
-#
-#				if is_valid_location(board, col):
-#					row = get_next_open_row(board, col)
-#					drop_piece(board, row, col, 1)
-#
-#					if winning_move(board, 1):
-#						print("PLAYER 1 Wins!!!! Congrats!!!")
-#						game_over = True
-#
+			# Ask for Player 1 Input
+
+			if turn == 0:
+				posx = event.pos[0]
+				col =
+
+				if is_valid_location(board, col):
+					row = get_next_open_row(board, col)
+					drop_piece(board, row, col, 1)
+
+					if winning_move(board, 1):
+						print("PLAYER 1 Wins!!!! Congrats!!!")
+						game_over = True
+
 			# Ask for Player 2 Input
-#
+
 #			else:
 #				col = int(input("Player 2 Make your selection (0-6):"))
 #
