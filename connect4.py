@@ -103,17 +103,18 @@ while not game_over:
 
 			# Ask for Player 2 Input
 
-#			else:
-#				col = int(input("Player 2 Make your selection (0-6):"))
-#
-#				if is_valid_location(board, col):
-#					row = get_next_open_row(board, col)
-#					drop_piece(board, row, col, 2)
-#
-#					if winning_move(board, 1):
-#						print("PLAYER 2 Wins!!!! Congrats!!!")
-#						game_over = True
-#
+			else:
+				posx = event.pos[0]
+				col = int(math.floor(posx/SQUARESIZE))
+
+				if is_valid_location(board, col):
+					row = get_next_open_row(board, col)
+					drop_piece(board, row, col, 2)
+
+					if winning_move(board, 1):
+						print("PLAYER 2 Wins!!!! Congrats!!!")
+						game_over = True
+
 			print_board(board)
 
 			turn += 1
