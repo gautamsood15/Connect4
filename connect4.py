@@ -106,6 +106,9 @@ while not game_over:
 		if event.type == pygame.QUIT:
 			sys.exit()
 
+		if event.type == pygame.MOUSEMOTION:
+
+
 		if event.type == pygame.MOUSEBUTTONDOWN:
 
 			# Ask for Player 1 Input
