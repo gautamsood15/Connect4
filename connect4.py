@@ -70,9 +70,7 @@ def draw_board(board):
 
 
 
-board = create_board()
-game_over = False
-turn = 0
+
 
 
 pygame.init()
@@ -80,13 +78,17 @@ pygame.init()
 SQUARESIZE = 100
 width = COLUMN_COUNT * SQUARESIZE
 height = (ROW_COUNT+1) * SQUARESIZE
-
 size = (width, height)
-
 RADIUS = int(SQUARESIZE/2 - 5)
 
 screen = pygame.display.set_mode(size)
 pygame.display.update()
+
+
+board = create_board()
+game_over = False
+turn = 0
+draw_board(board)
 
 while not game_over:
 
