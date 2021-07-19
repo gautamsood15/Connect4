@@ -64,6 +64,10 @@ def draw_board(board):
 				pygame.draw.circle(screen, BLACK, (int(c*SQUARESIZE+SQUARESIZE/2), int(r*SQUARESIZE+SQUARESIZE+SQUARESIZE/2)), RADIUS)
 			elif board[r][c] == 1:
 				pygame.draw.circle(screen, RED, (int(c*SQUARESIZE+SQUARESIZE/2), int(r*SQUARESIZE+SQUARESIZE+SQUARESIZE/2)), RADIUS)
+			else:
+				pygame.draw.circle(screen, YELLOW, (int(c*SQUARESIZE+SQUARESIZE/2), int(r*SQUARESIZE+SQUARESIZE+SQUARESIZE/2)), RADIUS)
+	pygame.display.update()
+
 
 
 board = create_board()
@@ -82,8 +86,6 @@ size = (width, height)
 RADIUS = int(SQUARESIZE/2 - 5)
 
 screen = pygame.display.set_mode(size)
-
-draw_board(board)
 pygame.display.update()
 
 while not game_over:
@@ -123,6 +125,7 @@ while not game_over:
 						game_over = True
 
 			print_board(board)
+			draw_board(board)
 
 			turn += 1
 			turn = turn % 2
