@@ -3,6 +3,8 @@ import pygame
 import sys
 import math
 
+# ------------------ Initiating Game Parameters --------------------------------
+
 BLUE = (0,0,255)
 BLACK = (0,0,0)
 RED = (255,0,0)
@@ -10,6 +12,8 @@ YELLOW = (255,255,0)
 
 ROW_COUNT = 6
 COLUMN_COUNT = 7
+
+# ------------------------ Implementing Game Functions -------------------------
 
 
 def create_board():
@@ -72,7 +76,7 @@ def draw_board(board):
 
 
 
-
+# ----------------------- Initiating GUI Parameters + Board construction -------
 
 
 pygame.init()
@@ -91,6 +95,10 @@ board = create_board()
 game_over = False
 turn = 0
 draw_board(board)
+
+
+
+# --------------------------- Game Loop Implementation -------------------------
 
 while not game_over:
 
