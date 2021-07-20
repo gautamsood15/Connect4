@@ -37,6 +37,12 @@ def winning_move(board, piece):
 			if board[r][c] == piece and board[r+1][c] == piece and board[r+2][c] == piece and board[r+3][c] == piece:
 				return True
 
+	# Check positively sloped diagonals
+
+
+	# Check negatively sloped diagonals
+
+	
 
 board = create_board()
 game_over = False
