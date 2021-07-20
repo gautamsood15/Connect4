@@ -38,11 +38,11 @@ def winning_move(board, piece):
 				return True
 
 	# Check positively sloped diagonals
-
+	
 
 	# Check negatively sloped diagonals
 
-	
+
 
 board = create_board()
 game_over = False
