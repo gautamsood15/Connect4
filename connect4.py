@@ -34,7 +34,7 @@ def winning_move(board, piece):
 				return True
 
 	# Check vertical locations for win
-
+	
 
 
 board = create_board()
