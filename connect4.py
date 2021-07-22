@@ -27,11 +27,13 @@ def print_board(board):
 	print(np.flip(board, 0))
 
 def winning_move(board, piece):
-	# check all horizontal locations
+	# Check horizontal locations for win
 	for c in range(COLUMN_COUNT-3):
 		for r in range(COLUMN_COUNT):
 			if board[r][c] == piece and board[r][c+1] == piece and board[r][c+2] == piece ad board[r][c+3] == piece:
 				return True
+
+	# Check vertical locations for win
 
 
 
@@ -50,6 +52,10 @@ while not game_over:
 		if is_valid_location(board, col):
 			row = get_next_open_row(board, col)
 			drop_piece(board, row, col, 1)
+
+			if winning_move(board, 1):
+				print("PLAYER 1 Wins!!!! Congrats!!!")
+				game_over = True
 
 	# Ask for Player 2 Input
 
