@@ -27,7 +27,9 @@ def print_board(board):
 	print(np.flip(board, 0))
 
 def winning_move(board, piece):
-
+	# check all horizontal locations
+	for c in range(COLUMN_COUNT):
+		
 
 
 
