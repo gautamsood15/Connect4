@@ -8,7 +8,7 @@ COLUMN_COUNT = 7
 
 
 def create_board():
-	board = np.zeros((6,7))
+	board = np.zeros((ROW_COUNT,COLUMN_COUNT))
 	return board
 
 
@@ -29,7 +29,7 @@ def print_board(board):
 def winning_move(board, piece):
 	# check all horizontal locations
 	for c in range(COLUMN_COUNT):
-		
+
 
 
 
