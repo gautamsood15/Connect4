@@ -26,6 +26,11 @@ def get_next_open_row(board, col):
 def print_board(board):
 	print(np.flip(board, 0))
 
+def winning_move(board, piece):
+
+
+
+
 
 board = create_board()
 game_over = False
