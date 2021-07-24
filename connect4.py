@@ -29,7 +29,7 @@ def print_board(board):
 def winning_move(board, piece):
 	# check all horizontal locations
 	for c in range(COLUMN_COUNT):
-
+		for r in range(COLUMN_COUNT):
 
 
 
