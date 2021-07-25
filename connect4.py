@@ -108,6 +108,7 @@ while not game_over:
 
 		if event.type == pygame.MOUSEMOTION:
 			pygame.draw.rect(screen, BLACK, (0,0,width,SQUARESIZE))
+			posx = event.pos[0]
 
 
 		if event.type == pygame.MOUSEBUTTONDOWN:
