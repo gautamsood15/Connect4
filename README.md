@@ -18,4 +18,4 @@ The game is developed using python programming language with the pygame module.	
 
 ### Opponent Scroing
 --> Lines of Two      -2 (for each direction, left, right and diagonal) 							<br/>
---> Lines of Three    -100 (for both direction, left and right)         							<br/>
+--> Lines of Three    -1000 (for both direction, left and right)         							<br/>
