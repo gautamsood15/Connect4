@@ -96,9 +96,10 @@ pygame.display.update()
 
 myfont = pygame.font.SysFont("monospace", 75)
 
+turn = random.randint(PLAYER, AI)
+
 board = create_board()
 game_over = False
-turn = 0
 draw_board(board)
 
 
@@ -143,7 +144,7 @@ while not game_over:
 
 					print_board(board)
 					draw_board(board)
-					
+
 	# Ask for Player 2 Input
 
 	if turn == AI and not game_over:
