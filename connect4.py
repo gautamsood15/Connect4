@@ -13,6 +13,9 @@ YELLOW = (255,255,0)
 ROW_COUNT = 6
 COLUMN_COUNT = 7
 
+PLAYER = 0
+AI = 1
+
 # ------------------------ Implementing Game Functions -------------------------
 
 
