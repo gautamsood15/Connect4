@@ -139,7 +139,7 @@ while not game_over:
 
 	# Ask for Player 2 Input
 
-	else:
+	if turn == AI and not game_over:
 		posx = event.pos[0]
 		col = int(math.floor(posx/SQUARESIZE))
 
