@@ -155,8 +155,8 @@ while not game_over:
 			print_board(board)
 			draw_board(board)
 
-			turn += 1
-			turn = turn % 2
+	turn += 1
+	turn = turn % 2
 
-			if game_over:
-				pygame.time.wait(3000)
+	if game_over:
+		pygame.time.wait(3000)
