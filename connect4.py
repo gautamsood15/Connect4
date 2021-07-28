@@ -137,6 +137,9 @@ while not game_over:
 						screen.blit(label, (40,10))
 						game_over = True
 
+						turn += 1
+						turn = turn % 2
+
 	# Ask for Player 2 Input
 
 	if turn == AI and not game_over:
@@ -155,8 +158,8 @@ while not game_over:
 			print_board(board)
 			draw_board(board)
 
-	turn += 1
-	turn = turn % 2
+			turn += 1
+			turn = turn % 2
 
 	if game_over:
 		pygame.time.wait(3000)
