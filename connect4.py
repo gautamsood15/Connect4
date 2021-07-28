@@ -148,6 +148,7 @@ while not game_over:
 		col = random.randint(0, COLUMN_COUNT-1)
 
 		if is_valid_location(board, col):
+			pygame.time.wait(500)
 			row = get_next_open_row(board, col)
 			drop_piece(board, row, col, 2)
 
