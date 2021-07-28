@@ -137,8 +137,8 @@ while not game_over:
 						screen.blit(label, (40,10))
 						game_over = True
 
-						turn += 1
-						turn = turn % 2
+					turn += 1
+					turn = turn % 2
 
 	# Ask for Player 2 Input
 
