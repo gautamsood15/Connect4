@@ -122,6 +122,7 @@ while not game_over:
 
 		if event.type == pygame.MOUSEBUTTONDOWN:
 			pygame.draw.rect(screen, BLACK, (0,0,width,SQUARESIZE))
+
 			# Ask for Player 1 Input
 
 			if turn == PLAYER:
