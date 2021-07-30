@@ -64,6 +64,9 @@ def winning_move(board, piece):
 				return True
 
 
+def score_position(board, piece):
+	pass
+
 def draw_board(board):
 	for c in range(COLUMN_COUNT):
 		for r in range(ROW_COUNT):
