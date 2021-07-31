@@ -17,6 +17,9 @@ COLUMN_COUNT = 7
 PLAYER = 0
 AI = 1
 
+PLAYER_PIECE = 1
+AI_PIECE = 2
+
 # ------------------------ Implementing Game Functions -------------------------
 
 
@@ -66,7 +69,7 @@ def winning_move(board, piece):
 
 def score_position(board, piece):
 	# Horizontal score
-	
+
 
 def draw_board(board):
 	for c in range(COLUMN_COUNT):
