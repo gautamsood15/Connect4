@@ -69,7 +69,7 @@ def winning_move(board, piece):
 
 def score_position(board, piece):
 	# Horizontal Score
-	
+
 
 
 def draw_board(board):
@@ -164,7 +164,7 @@ while not game_over:
 			drop_piece(board, row, col, AI_PIECE)
 
 			if winning_move(board, AI_PIECE):
-				label = myfont.render("PLAYER 1 Wins!", 1, YELLOW)
+				label = myfont.render("PLAYER 2 Wins!", 1, YELLOW)
 				screen.blit(label, (40,10))
 				game_over = True
 
