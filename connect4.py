@@ -68,7 +68,8 @@ def winning_move(board, piece):
 
 
 def score_position(board, piece):
-	# Horizontal score
+	# Horizontal Score
+	
 
 
 def draw_board(board):
