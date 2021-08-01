@@ -69,6 +69,7 @@ def winning_move(board, piece):
 
 def score_position(board, piece):
 	# Horizontal Score
+	pass 
 
 
 
