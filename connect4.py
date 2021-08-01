@@ -138,7 +138,7 @@ while not game_over:
 
 				if is_valid_location(board, col):
 					row = get_next_open_row(board, col)
-					drop_piece(board, row, col, 1)
+					drop_piece(board, row, col, PLAYER_PIECE)
 
 					if winning_move(board, 1):
 						label = myfont.render("PLAYER 1 Wins!", 1, RED)
