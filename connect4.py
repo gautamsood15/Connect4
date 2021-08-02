@@ -20,6 +20,8 @@ AI = 1
 PLAYER_PIECE = 1
 AI_PIECE = 2
 
+WINDOW_LENGTH = 4
+
 # ------------------------ Implementing Game Functions -------------------------
 
 
@@ -69,7 +71,10 @@ def winning_move(board, piece):
 
 def score_position(board, piece):
 	# Horizontal Score
-	pass 
+	#for r in range(ROW_COUNT):
+		#row_array = [int(i) for i in list(board[r,:])]
+		#for c in range
+		pass
 
 
 
