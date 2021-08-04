@@ -71,14 +71,7 @@ def winning_move(board, piece):
 
 def score_position(board, piece):
 	# Horizontal Score
-	score = 0
-	for r in range(ROW_COUNT):
-		row_array = [int(i) for i in list(board[r,:])]
-		for c in range(COLUMN_COUNT-3):
-			window = row_array[c:c+WINDOW_LENGTH]
-			if window.count(piece) == 4:
-				score += 100
-	return score
+
 
 
 
