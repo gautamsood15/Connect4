@@ -79,6 +79,8 @@ def score_position(board, piece):
 			if window.count(piece) == 4:
 				score += 100
 
+	return score
+
 def draw_board(board):
 	for c in range(COLUMN_COUNT):
 		for r in range(ROW_COUNT):
