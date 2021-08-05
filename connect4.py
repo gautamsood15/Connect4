@@ -87,7 +87,8 @@ def score_position(board, piece):
 
 def get_valid_locations(board):
 	pass
-
+def pick_best_move(board, piece):
+	pass
 
 
 def draw_board(board):
