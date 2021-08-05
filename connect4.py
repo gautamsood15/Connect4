@@ -88,7 +88,9 @@ def score_position(board, piece):
 def get_valid_locations(board):
 	valid_locations = []
 	for col in range(COLUMN_COUNT):
-		
+		if is_valid_location(board, col):
+			valid_locations.append(col)
+	
 
 def pick_best_move(board, piece):
 	pass
