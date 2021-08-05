@@ -85,6 +85,12 @@ def score_position(board, piece):
 
 	return score
 
+def get_valid_locations(board):
+	pass
+def pick_best_move(board, piece):
+	pass
+
+
 def draw_board(board):
 	for c in range(COLUMN_COUNT):
 		for r in range(ROW_COUNT):
