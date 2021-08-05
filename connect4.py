@@ -17,6 +17,7 @@ COLUMN_COUNT = 7
 PLAYER = 0
 AI = 1
 
+EMPTY = 0
 PLAYER_PIECE = 1
 AI_PIECE = 2
 
@@ -79,7 +80,7 @@ def score_position(board, piece):
 
 			if window.count(piece) == 4:
 				score += 100
-			elif window.count(piece) == 3 and window.count(0):
+			elif window.count(piece) == 3 and window.count(EMPTY):
 
 	return score
 
