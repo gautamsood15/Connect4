@@ -86,7 +86,8 @@ def score_position(board, piece):
 	return score
 
 def get_valid_locations(board):
-	pass
+	valid_locations = []
+
 def pick_best_move(board, piece):
 	pass
 
