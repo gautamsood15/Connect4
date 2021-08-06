@@ -93,7 +93,8 @@ def get_valid_locations(board):
 	return valid_locations
 
 def pick_best_move(board, piece):
-	pass
+	valid_locations = get_valid_locations(board)
+	
 
 
 def draw_board(board):
