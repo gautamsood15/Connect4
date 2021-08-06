@@ -90,7 +90,7 @@ def get_valid_locations(board):
 	for col in range(COLUMN_COUNT):
 		if is_valid_location(board, col):
 			valid_locations.append(col)
-	
+	return valid_locations
 
 def pick_best_move(board, piece):
 	pass
