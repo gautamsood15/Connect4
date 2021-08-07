@@ -95,6 +95,7 @@ def get_valid_locations(board):
 def pick_best_move(board, piece):
 	valid_locations = get_valid_locations(board)
 	for col in valid_locations:
+		row = get_next_open_row(board, col)
 		
 
 
