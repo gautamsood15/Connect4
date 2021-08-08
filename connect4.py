@@ -94,8 +94,8 @@ def get_valid_locations(board):
 
 def pick_best_move(board, piece):
 	best_score = 0
-
 	valid_locations = get_valid_locations(board)
+	best_col = random.choice(valid_locations)
 	for col in valid_locations:
 		row = get_next_open_row(board, col)
 		temp_board = board.copy()
