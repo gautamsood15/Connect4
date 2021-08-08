@@ -98,6 +98,7 @@ def pick_best_move(board, piece):
 		row = get_next_open_row(board, col)
 		temp_board = board.copy()
 		drop_piece(temp_board, row, col, piece)
+		score = score_position(temp_board, piece)
 
 
 def draw_board(board):
