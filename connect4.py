@@ -122,7 +122,6 @@ def draw_board(board):
 
 # ----------------------- Initiating GUI Parameters + Board construction -------
 
-
 pygame.init()
 
 SQUARESIZE = 100
