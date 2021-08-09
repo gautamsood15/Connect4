@@ -104,6 +104,8 @@ def pick_best_move(board, piece):
 		score = score_position(temp_board, piece)
 		if score > best_score:
 			best_score = score
+			best_col = col
+	
 
 
 def draw_board(board):
