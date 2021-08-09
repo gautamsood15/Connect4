@@ -192,7 +192,8 @@ while not game_over:
 
 	if turn == AI and not game_over:
 
-		col = random.randint(0, COLUMN_COUNT-1)
+		#col = random.randint(0, COLUMN_COUNT-1)
+		col = pick_best_move(board, AI_PIECE)
 
 		if is_valid_location(board, col):
 			pygame.time.wait(500)
