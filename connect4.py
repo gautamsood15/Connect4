@@ -84,6 +84,8 @@ def score_position(board, piece):
 				score += 10
 
 	# Vertical Score
+	for c in range(COLUMN_COUNT):
+
 
 	return score
 
