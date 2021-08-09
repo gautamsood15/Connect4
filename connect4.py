@@ -105,7 +105,7 @@ def pick_best_move(board, piece):
 		if score > best_score:
 			best_score = score
 			best_col = col
-			
+
 	return best_col
 
 
