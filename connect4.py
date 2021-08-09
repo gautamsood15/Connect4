@@ -83,6 +83,8 @@ def score_position(board, piece):
 			elif window.count(piece) == 3 and window.count(EMPTY) == 1:
 				score += 10
 
+	# Vertical Score
+
 	return score
 
 def get_valid_locations(board):
