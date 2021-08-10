@@ -86,6 +86,7 @@ def score_position(board, piece):
 	# Vertical Score
 	for c in range(COLUMN_COUNT):
 		col_array = [int(i) for i in list(board[:,c])]
+		for r in range(ROW_COUNT-3):
 
 
 	return score
