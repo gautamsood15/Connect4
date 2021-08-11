@@ -89,6 +89,8 @@ def score_position(board, piece):
 		for r in range(ROW_COUNT-3):
 			window = row_array[r:r+WINDOW_LENGTH]
 
+			if window.count(piece) == 4:
+
 	return score
 
 def get_valid_locations(board):
