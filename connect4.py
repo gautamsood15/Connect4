@@ -87,7 +87,7 @@ def score_position(board, piece):
 	for c in range(COLUMN_COUNT):
 		col_array = [int(i) for i in list(board[:,c])]
 		for r in range(ROW_COUNT-3):
-
+			window = row_array[r:r+WINDOW_LENGTH]
 
 	return score
 
