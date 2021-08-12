@@ -93,6 +93,9 @@ def score_position(board, piece):
 				score += 100
 			elif window.count(piece) == 3 and window.count(EMPTY) == 1:
 				score += 10
+
+	# Score Positive Diagonals
+
 	return score
 
 def get_valid_locations(board):
