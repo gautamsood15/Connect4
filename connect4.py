@@ -95,7 +95,8 @@ def score_position(board, piece):
 				score += 10
 
 	# Score Positive Diagonals
-
+	for r in range(ROW_COUNT-3):
+		
 	return score
 
 def get_valid_locations(board):
