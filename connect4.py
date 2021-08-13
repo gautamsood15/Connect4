@@ -99,6 +99,7 @@ def score_position(board, piece):
 		for c in range(COLUMN_COUNT-3):
 			window = [board[r+i][c+i] for i in range(WINDOW_LENGTH)]
 			if window.count(piece) == 4:
+				score += 100
 	
 
 	return score
