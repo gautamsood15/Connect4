@@ -96,6 +96,7 @@ def score_position(board, piece):
 
 	# Score Positive Diagonals
 	for r in range(ROW_COUNT-3):
+		for c in range(COLUMN_COUNT-3):
 
 
 	return score
