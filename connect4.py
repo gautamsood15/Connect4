@@ -104,6 +104,7 @@ def score_position(board, piece):
 				score += 10
 
 	# Score Negative Diagonals
+	for r in range(ROW_COUNT-3):
 
 
 	return score
