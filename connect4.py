@@ -106,7 +106,7 @@ def score_position(board, piece):
 	# Score Negative Diagonals
 	for r in range(ROW_COUNT-3):
 		for c in range(COLUMN_COUNT-3):
-
+			window = [board[r+3-i][c+i] for i in range (WINDOW_LENGTH)]
 
 	return score
 
