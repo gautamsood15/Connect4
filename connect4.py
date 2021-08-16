@@ -72,7 +72,7 @@ def winning_move(board, piece):
 def evaluate_window(window, piece):
 
 	if window.count(piece) == 4:
-	
+		score += 100
 
 
 def score_position(board, piece):
