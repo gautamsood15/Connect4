@@ -70,6 +70,7 @@ def winning_move(board, piece):
 				return True
 
 def evaluate_window(window, piece):
+	score = 0
 	opp_piece = PLAYER_PIECE
 	if piece == PLAYER_PIECE:
 		opp_piece = AI_PIECE
