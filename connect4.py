@@ -85,6 +85,9 @@ def evaluate_window(window, piece):
 	if window.count(opp_piece) == 3 and window.count(EMPTY) == 1:
 		score -= 8
 
+	return
+
+
 def score_position(board, piece):
 	# Horizontal Score
 	score = 0
