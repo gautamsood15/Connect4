@@ -72,7 +72,7 @@ def winning_move(board, piece):
 def evaluate_window(window, piece):
 	opp_piece = PLAYER_PIECE
 	if piece == PLAYER_PIECE:
-		opp_piece = AI_PIECE		
+		opp_piece = AI_PIECE
 
 	if window.count(piece) == 4:
 		score += 100
@@ -81,6 +81,8 @@ def evaluate_window(window, piece):
 	elif window.count(piece) == 2 and window.count(EMPTY) == 2:
 		score += 5
 
+	if window.count(opp_piece) == 3 and window.count(EMPTY) == 1:
+		
 
 def score_position(board, piece):
 	# Horizontal Score
