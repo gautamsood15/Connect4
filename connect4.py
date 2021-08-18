@@ -102,11 +102,7 @@ def score_position(board, piece):
 		col_array = [int(i) for i in list(board[:,c])]
 		for r in range(ROW_COUNT-3):
 			window = col_array[r:r+WINDOW_LENGTH]
-
-			if window.count(piece) == 4:
-				score += 100
-			elif window.count(piece) == 3 and window.count(EMPTY) == 1:
-				score += 10
+			score += evaluate_window(window, piece)
 
 	# Score Positive Diagonals
 	for r in range(ROW_COUNT-3):
