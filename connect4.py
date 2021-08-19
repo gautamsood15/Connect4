@@ -85,7 +85,7 @@ def evaluate_window(window, piece):
 	if window.count(opp_piece) == 3 and window.count(EMPTY) == 1:
 		score -= 8
 
-	return
+	return score
 
 
 def score_position(board, piece):
