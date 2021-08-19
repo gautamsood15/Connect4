@@ -83,14 +83,21 @@ def evaluate_window(window, piece):
 		score += 5
 
 	if window.count(opp_piece) == 3 and window.count(EMPTY) == 1:
-		score -= 8
+		score -= 80
 
 	return score
 
 
 def score_position(board, piece):
-	# Horizontal Score
 	score = 0
+
+	# Center Score
+	center_array = [int(i) for i in list(board[:, COLUMN_COUNT//2])]
+	center_count = center_array.count(piece)
+	score += center_count * 6
+
+	# Horizontal Score
+
 	for r in range(ROW_COUNT):
 		row_array = [int(i) for i in list(board[r,:])]
 		for c in range(COLUMN_COUNT-3):
@@ -128,7 +135,7 @@ def get_valid_locations(board):
 def pick_best_move(board, piece):
 
 	valid_locations = get_valid_locations(board)
-	best_score = 0
+	best_score = -10000
 	best_col = random.choice(valid_locations)
 	for col in valid_locations:
 		row = get_next_open_row(board, col)
