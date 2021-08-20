@@ -128,7 +128,8 @@ def score_position(board, piece):
 
 
 def minimax(board, depth, maximizingPlayer):
-
+	if depth == 0 or terminal_node:
+		pass
 
 def get_valid_locations(board):
 	valid_locations = []
