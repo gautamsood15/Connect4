@@ -125,6 +125,11 @@ def score_position(board, piece):
 
 	return score
 
+
+
+def minimax(board, depth, maximizingPlayer):
+
+
 def get_valid_locations(board):
 	valid_locations = []
 	for col in range(COLUMN_COUNT):
