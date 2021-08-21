@@ -125,6 +125,7 @@ def score_position(board, piece):
 
 	return score
 
+def is_terminal_node():
 
 
 def minimax(board, depth, maximizingPlayer):
