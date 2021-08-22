@@ -137,9 +137,8 @@ def minimax(board, depth, maximizingPlayer):
 			return 100000000000000
 		elif winning_move(board, PLAYER_PIECE):
 			return -100000000000000
-
-
-
+		else:
+			return 0
 
 def get_valid_locations(board):
 	valid_locations = []
