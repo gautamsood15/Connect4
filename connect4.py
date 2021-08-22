@@ -131,6 +131,7 @@ def is_terminal_node(board):
 
 def minimax(board, depth, maximizingPlayer):
 	valid_locations = get_valid_locations(board)
+	is_terminal = is_terminal_node(board)
 	
 
 
