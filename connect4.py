@@ -133,7 +133,8 @@ def minimax(board, depth, maximizingPlayer):
 	valid_locations = get_valid_locations(board)
 	is_terminal = is_terminal_node(board)
 	if depth == 0 or is_terminal:
-		
+		if winning_move(board, AI_PIECE):
+			
 
 
 
