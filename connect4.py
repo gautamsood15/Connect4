@@ -138,7 +138,7 @@ def minimax(board, depth, maximizingPlayer):
 				return 100000000000000
 			elif winning_move(board, PLAYER_PIECE):
 				return -100000000000000
-			else:   # Game is over
+			else:   # Game is over, no more valid moves
 				return 0
 
 
