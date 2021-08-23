@@ -143,6 +143,9 @@ def minimax(board, depth, maximizingPlayer):
 		else:		#Depth is zero
 			return score_position(board, AI_PIECE)
 
+	if maximizingPlayer:
+		
+
 
 def get_valid_locations(board):
 	valid_locations = []
