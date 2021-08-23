@@ -140,7 +140,8 @@ def minimax(board, depth, maximizingPlayer):
 				return -100000000000000
 			else:   # Game is over, no more valid moves
 				return 0
-
+		else:		#Depth is zero
+		
 
 def get_valid_locations(board):
 	valid_locations = []
