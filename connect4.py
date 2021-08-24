@@ -145,6 +145,7 @@ def minimax(board, depth, maximizingPlayer):
 
 	if maximizingPlayer:
 		value = -math.inf
+		for col in vaid_locations:
 
 
 
