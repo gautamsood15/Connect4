@@ -146,7 +146,7 @@ def minimax(board, depth, maximizingPlayer):
 	if maximizingPlayer:
 		value = -math.inf
 		for col in vaid_locations:
-
+			row = get_next_open_row(board, col)
 
 
 def get_valid_locations(board):
