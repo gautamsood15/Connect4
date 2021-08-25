@@ -147,6 +147,7 @@ def minimax(board, depth, maximizingPlayer):
 		value = -math.inf
 		for col in vaid_locations:
 			row = get_next_open_row(board, col)
+			b_copy = board.copy()
 
 
 def get_valid_locations(board):
