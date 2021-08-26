@@ -153,7 +153,8 @@ def minimax(board, depth, maximizingPlayer):
 			return new_score
 
 	else:	# Minimizing Player
-		value = 
+		value = math.inf
+		
 
 def get_valid_locations(board):
 	valid_locations = []
