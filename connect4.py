@@ -152,8 +152,8 @@ def minimax(board, depth, maximizingPlayer):
 			new_score = max(value, minimax(b_copy, depth-1, False))
 			return new_score
 
-	else:	#Minimizing Player
-
+	else:	# Minimizing Player
+		value = 
 
 def get_valid_locations(board):
 	valid_locations = []
