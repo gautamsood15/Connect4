@@ -140,7 +140,7 @@ def minimax(board, depth, maximizingPlayer):
 				return -100000000000000
 			else:   # Game is over, no more valid moves
 				return 0
-		else:		#Depth is zero
+		else:		# Depth is zero
 			return score_position(board, AI_PIECE)
 
 	if maximizingPlayer:
@@ -154,7 +154,7 @@ def minimax(board, depth, maximizingPlayer):
 
 	else:	# Minimizing Player
 		value = math.inf
-		
+
 
 def get_valid_locations(board):
 	valid_locations = []
