@@ -158,6 +158,7 @@ def minimax(board, depth, maximizingPlayer):
 			row = get_next_open_row(board, col)
 			b_copy = board.copy()
 			drop_piece(b_copy, row, col, AI_PIECE)
+			new_score = 
 
 
 def get_valid_locations(board):
