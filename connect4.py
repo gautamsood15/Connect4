@@ -152,6 +152,7 @@ def minimax(board, depth, maximizingPlayer):
 			new_score = minimax(b_copy, depth-1, False)
 			if new_score > value:
 				value = new_score
+				column =
 			return new_score
 
 	else:	# Minimizing Player
