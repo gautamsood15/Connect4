@@ -151,7 +151,7 @@ def minimax(board, depth, maximizingPlayer):
 			drop_piece(b_copy, row, col, AI_PIECE)
 			new_score = minimax(b_copy, depth-1, False)
 			if new_score > value:
-				
+				value = new_score
 			return new_score
 
 	else:	# Minimizing Player
