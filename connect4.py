@@ -154,7 +154,7 @@ def minimax(board, depth, maximizingPlayer):
 			if new_score > value:
 				value = new_score
 				column = col
-			return new_score
+			return column, value
 
 	else:	# Minimizing Player
 		value = math.inf
