@@ -167,7 +167,7 @@ def minimax(board, depth, maximizingPlayer):
 			if new_score < value:
 				value = new_score
 				column = col
-			return new_score
+			return column, value
 
 
 def get_valid_locations(board):
