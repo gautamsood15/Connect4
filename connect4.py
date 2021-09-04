@@ -154,6 +154,7 @@ def minimax(board, depth, alpha, beta, maximizingPlayer):
 			if new_score > value:
 				value = new_score
 				column = col
+			alpha = max(value, alpha)
 		return column, value
 
 	else:	# Minimizing Player
