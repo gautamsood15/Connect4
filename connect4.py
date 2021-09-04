@@ -163,7 +163,7 @@ def minimax(board, depth, alpha, beta, maximizingPlayer):
 			row = get_next_open_row(board, col)
 			b_copy = board.copy()
 			drop_piece(b_copy, row, col, PLAYER_PIECE)
-			new_score = minimax(b_copy, depth-1, True)[1]
+			new_score = minimax(b_copy, depth-1, alpha, beta, True)[1]
 			if new_score < value:
 				value = new_score
 				column = col
