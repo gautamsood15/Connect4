@@ -141,7 +141,7 @@ def minimax(board, depth, maximizingPlayer):
 			else:   # Game is over, no more valid moves
 				return (None, 0)
 		else:		# Depth is zero
-			return score_position(board, AI_PIECE)
+			return (None, score_position(board, AI_PIECE))
 
 	if maximizingPlayer:
 		value = -math.inf
